@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.pgErr {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 40px 10px 20px 40px;
+}
+.pgErr-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.pgErr-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.pgErr-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 10px;
+}
+.pgErr-left img {
+  width: 60%;
+}
+.pgErr-not_found {
+  position: absolute;
+  top: 35px;
+}
+.pgErr-not_found h3 {
+  font-family: Inconsolata;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 25px;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+  color: #333333;
+}
+.pgErr-createBy {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.pgErr-createBy p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  text-align: center;
+  color: #bdbdbd;
+}
+.pgErr-right h2 {
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 70px;
+  letter-spacing: -0.035em;
+  color: #333333;
+  margin-bottom: 2rem;
+}
+.pgErr-right p {
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.035em;
+  color: #4f4f4f;
+  width: 380px;
+  margin-bottom: 2.5rem;
+}
+.pgErr-right button {
+  width: 180px;
+  height: 58px;
+  background: #333333;
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* @media (max-width: 580px) {
+  .pgErr-wrapper {
+    flex-direction: column;
+  }
+  .pgErr-left img {
+    min-width: 380px;
+    width: 100%;
+    padding: 0 44px;
+  }
+} */
+@media (max-width: 380px) {
+  .pgErr-wrapper {
+    flex-direction: column;
+  }
+  .pgErr-left {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .pgErr-left img {
+    min-width: 280px;
+    width: 100%;
+    padding: 0 44px;
+  }
+  .pgErr-right h2 {
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 71px;
+    letter-spacing: -0.035em;
+    color: #333333;
+  }
+  .pgErr-right p {
+    padding-right: 20px;
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: -0.035em;
+    color: #4f4f4f;
+  }
+  .pgErr-createBy {
+    white-space: nowrap;
+  }
+}
